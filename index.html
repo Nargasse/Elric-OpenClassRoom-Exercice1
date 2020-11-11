@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+<html lang='fr'>
 <head>
     <meta charset='utf-8'>
     <title>Reservia</title>
@@ -23,7 +25,7 @@
         <form><!--Je ne suis pas certain de la meilleure approche pour cette section. J'ai mis une forme qui me parait cohérente vis à vis de l'usage,
             mais je ne suis pas certain que ce soit la manière la plus simple de faire les choses, y compris vis à vis du back-end.'--> 
             <label for='Recherche_Ville'><img src='Images/Icone_Geolocalisation.png' alt='Icone geolocalisation'></label>
-            <input type='texte' id='Recherche_Ville' name='Recherche_Ville'>
+            <input type='text' id='Recherche_Ville' name='Recherche_Ville'>
             <input type='submit' value='submit'>
         </form>
         <div>
@@ -44,43 +46,44 @@
         <p class='Avertissement'>Plus de 500 logements dans cette ville</p>
         <div id='Hebergements_Principals'>
             <h2>Hébergements à Marseille</h2>
-            <div>
+            <div class='Fiche_Hebergement_Horizontal'>
                 <!--Pour le moment, la question qui se pose est comment rendre le cadre des hôtels ?
                 Dois-je encore réduire les images au risque de perdre encore en qualité ?
                 Dois-je découper un peu plus ?
                 Puis-je trouver un moyen de dessiner mon texte et mon cadre directement par dessus l'image ?
                 Solution intermediaire, je pourrais couper de façon brutal l'image la ou j'applique le texte.
                 Je penses d'abord commencer par mettre les cadres en CSS et voir ou ça m'amène.-->
+                <!--Notons aussi que je peux rendre l'image cliquable pour aggrandissement, à défaut d'avoir une fiche détaillé pour le moment.-->
                 <img src='Images/Vignette_hotel_H.png'>
                 <h3>Hôtel générique mais sympa</h3>
                 <p>Entre 1 et 999€</p>
                 <P>*****</P>
             </div>
-            <div>
+            <div class='Fiche_Hebergement_Horizontal'>
                 <img src='Images/Vignette_hotel_H.png'>
                 <h3>Hôtel générique mais sympa</h3>
                 <p>Entre 1 et 999€</p>
                 <P>*****</P>
             </div>
-            <div>
+            <div class='Fiche_Hebergement_Horizontal'>
                 <img src='Images/Vignette_hotel_H.png'>
                 <h3>Hôtel générique mais sympa</h3>
                 <p>Entre 1 et 999€</p>
                 <P>*****</P>
             </div>
-            <div>
+            <div class='Fiche_Hebergement_Horizontal'>
                 <img src='Images/Vignette_hotel_H.png'>
                 <h3>Hôtel générique mais sympa</h3>
                 <p>Entre 1 et 999€</p>
                 <P>*****</P>
             </div>
-            <div>
+            <div class='Fiche_Hebergement_Horizontal'>
                 <img src='Images/Vignette_hotel_H.png'>
                 <h3>Hôtel générique mais sympa</h3>
                 <p>Entre 1 et 999€</p>
                 <P>*****</P>
             </div>
-            <div>
+            <div class='Fiche_Hebergement_Horizontal'>
                 <img src='Images/Vignette_hotel_H.png'>
                 <h3>Hôtel générique mais sympa</h3>
                 <p>Entre 1 et 999€</p>
@@ -89,25 +92,25 @@
         </div>
         <aside id='Hebergements_Populaires'>
             <h2>Les plus populaires</h2>
-            <div>
+            <div class='Fiche_Hebergement_Vertical'>
                 <img src='Images/Vignette_Hotel_V.png'>
                 <h3>Hôtel trendy et cool</h3>
                 <p>Entre 1 et 999€</p>
                 <p>*****</p>
             </div>
-            <div>
+            <div class='Fiche_Hebergement_Vertical'>
                 <img src='Images/Vignette_Hotel_V.png'>
                 <h3>Hôtel trendy et cool</h3>
                 <p>Entre 1 et 999€</p>
                 <p>*****</p>
             </div>
-            <div>
+            <div class='Fiche_Hebergement_Vertical'>
                 <img src='Images/Vignette_Hotel_V.png'>
                 <h3>Hôtel trendy et cool</h3>
                 <p>Entre 1 et 999€</p>
                 <p>*****</p>
             </div>
-        </aside
+        </aside>
     </section>
 
     <section id='Activites'>
@@ -139,3 +142,4 @@
         </div>
     </footer>
 </body>
+</html>
