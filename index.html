@@ -8,7 +8,7 @@
     <header>
     <!-- Le header est constitué du titre du site en haut à gauche,
     et d'une petite liste de trois boutons, alignés horizontalement en haut à droite. -->
-        <h1>Reservia</h1>
+        <img src='Images/Reservia_Logo.png' alt='Logo Reservia'>
         <ul>
             <li>Hébergements</li>
             <li>Activités</li>
@@ -20,30 +20,94 @@
         <!-- On met ici les recherches et les filtres.-->
         <h2>Trouvez votre hébergement pour des vacances de rêve.</h2>
         <p>En plein centre ville ou en pleine nature.</p>
-        <form><!-- Une div semble ici nécessaire pour faire un truc joli. Elle sera divisé en trois :
-        La partie de gauche contient l'icone, la partie centrale la recherche, la partie gauche le bouton.
-        Le tout organisé dans une joli border bien arrondie, et avec des couleurs différents.--> 
+        <form><!--Je ne suis pas certain de la meilleure approche pour cette section. J'ai mis une forme qui me parait cohérente vis à vis de l'usage,
+            mais je ne suis pas certain que ce soit la manière la plus simple de faire les choses, y compris vis à vis du back-end.'--> 
             <label for='Recherche_Ville'><img src='Images/Icone_Geolocalisation.png' alt='Icone geolocalisation'></label>
             <input type='texte' id='Recherche_Ville' name='Recherche_Ville'>
             <input type='submit' value='submit'>
         </form>
         <div>
             <p>Filtres :</p>
-            <button><img>Economique</button>
-            <button><img>Familial</button>
-            <button><img>Romantique</button>
-            <button><img>Animaux autorisés</button>
+            <!--Les îcones ne sont pas terribles, mais je ne sais pas comment rendre une petite image sans la réduire à une poignée de pixels.
+            Avec les 21 pixels max qui me semblaient être une taille adapté au design, comment avoir un truc correct ? Je n'ai pas de bons icônes sous la main...-->
+            <button><img src='Images/Billet_PA.png' alt='Billet de 5€'>Economique</button>
+            <button><img src='Images/Familial_PA.png' alt='Couple'>Familial</button>
+            <button><img src='Images/Coeur_PA.png' alt='Coeur'>Romantique</button>
+            <button><img src='Images/Chien.png' alt='Chien'>Animaux autorisés</button>
         </div>
     </nav>
 
     <section id='Hebergements'>
+        <!--Chaque section correspond à une première division pour pouvoir séparer le contenu et dessiner un cadre autours.
+        Chaque image est comprise dans une seconde division de manière à pouvoir créer un cadre et renre plus simple l'édition en séparant clairement chaque hôtel.
+        Qui plus est, ce système sera très simple à automatisé par la suite, les fiches d'hôtels pourront aisément être générés sur ce modèle.-->
         <p class='Avertissement'>Plus de 500 logements dans cette ville</p>
         <div id='Hebergements_Principals'>
             <h2>Hébergements à Marseille</h2>
+            <div>
+                <!--Pour le moment, la question qui se pose est comment rendre le cadre des hôtels ?
+                Dois-je encore réduire les images au risque de perdre encore en qualité ?
+                Dois-je découper un peu plus ?
+                Puis-je trouver un moyen de dessiner mon texte et mon cadre directement par dessus l'image ?
+                Solution intermediaire, je pourrais couper de façon brutal l'image la ou j'applique le texte.
+                Je penses d'abord commencer par mettre les cadres en CSS et voir ou ça m'amène.-->
+                <img src='Images/Vignette_hotel_H.png'>
+                <h3>Hôtel générique mais sympa</h3>
+                <p>Entre 1 et 999€</p>
+                <P>*****</P>
+            </div>
+            <div>
+                <img src='Images/Vignette_hotel_H.png'>
+                <h3>Hôtel générique mais sympa</h3>
+                <p>Entre 1 et 999€</p>
+                <P>*****</P>
+            </div>
+            <div>
+                <img src='Images/Vignette_hotel_H.png'>
+                <h3>Hôtel générique mais sympa</h3>
+                <p>Entre 1 et 999€</p>
+                <P>*****</P>
+            </div>
+            <div>
+                <img src='Images/Vignette_hotel_H.png'>
+                <h3>Hôtel générique mais sympa</h3>
+                <p>Entre 1 et 999€</p>
+                <P>*****</P>
+            </div>
+            <div>
+                <img src='Images/Vignette_hotel_H.png'>
+                <h3>Hôtel générique mais sympa</h3>
+                <p>Entre 1 et 999€</p>
+                <P>*****</P>
+            </div>
+            <div>
+                <img src='Images/Vignette_hotel_H.png'>
+                <h3>Hôtel générique mais sympa</h3>
+                <p>Entre 1 et 999€</p>
+                <P>*****</P>
+            </div>
         </div>
-        <div id='Hebergements_Populaires'>
+        <aside id='Hebergements_Populaires'>
             <h2>Les plus populaires</h2>
-        </div>
+            <div>
+                <img src='Images/Vignette_Hotel_V.png'>
+                <h3>Hôtel trendy et cool</h3>
+                <p>Entre 1 et 999€</p>
+                <p>*****</p>
+            </div>
+            <div>
+                <img src='Images/Vignette_Hotel_V.png'>
+                <h3>Hôtel trendy et cool</h3>
+                <p>Entre 1 et 999€</p>
+                <p>*****</p>
+            </div>
+            <div>
+                <img src='Images/Vignette_Hotel_V.png'>
+                <h3>Hôtel trendy et cool</h3>
+                <p>Entre 1 et 999€</p>
+                <p>*****</p>
+            </div>
+        </aside
     </section>
 
     <section id='Activites'>
