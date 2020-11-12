@@ -15,7 +15,7 @@
     src: url('Font/Raleway-Light.ttf');
 }
 
-/* Fonts - apply */
+/* Global */
 
 h1, h2, h3, h4 {
     font-family: 'Raleway-Bold';
@@ -27,13 +27,27 @@ p
 }
 
 .Avertissement {
-    font-family: 'Raleway-light';
+    font-family: 'Raleway-Light';
 }
 
-/* */
 body {
     margin: 0 8px 0 8px;
 }
+
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
+a:visited {
+    text-decoration:none;
+    color:inherit;
+}
+
+a:hover {
+    color:inherit;
+}
+/* Header */
 
 header {
     display: flex;
@@ -43,13 +57,27 @@ header {
     height: 45px;
 }
 
+/* Ca commence à ressembler à ce qu'on demande, quelques notes néanmoins :
+ La marge du haut n'est pas assez haute par rapport à la représentation.
+ La police de l'inscription n'est pas la bonne, en la mettant sur bold je l'ai fais sortir de Railway.
+ Si j'augmente la taille de la boîte Header, je réduis la qualité du texte "Reservia" parce qu'il décide de grandir aussi... Que faire */
+
 header ul {
+    text-align: right;
 }
 
 header li {
     list-style-type: none;
     display: inline;
     padding: 16px 5px 16px 5px;
-    border-top: 2px blue solid;
 }
 
+header li:hover {
+    border-top: 2px blue solid;
+    color: blue;
+}
+
+#Inscription {
+    color:blue;
+    font-family: 'Railway-Bold';
+}
