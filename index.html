@@ -4,6 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <title>Reservia</title>
+    <link rel='stylesheet' href='style.css'>
 </head>
 
 <body>
@@ -11,6 +12,9 @@
     <!-- Le header est constitué du titre du site en haut à gauche,
     et d'une petite liste de trois boutons, alignés horizontalement en haut à droite. -->
         <img src='Images/Reservia_Logo.png' alt='Logo Reservia'>
+        <!--La liste est-elle vraiment tellement adapté ? Nous avons besoin de 2 liens de repositionnement sur la page,
+        et d'un bouton S'inscrire qui rentre dans une logique différente.
+        Peut-être ferais-je mieux de rentrer nos boutons dans une inline et de mettre l'inscription dans une troisième box ? -->
         <ul>
             <li>Hébergements</li>
             <li>Activités</li>
@@ -31,7 +35,7 @@
         <div>
             <p>Filtres :</p>
             <!--Les îcones ne sont pas terribles, mais je ne sais pas comment rendre une petite image sans la réduire à une poignée de pixels.
-            Avec les 21 pixels max qui me semblaient être une taille adapté au design, comment avoir un truc correct ? Je n'ai pas de bons icônes sous la main...-->
+            Avec les 21 pixels max qui me semblaient être une taille adapté au design, les icônes de Font Awesome ne me paraissent pas tellement mieux que les miens...-->
             <button><img src='Images/Billet_PA.png' alt='Billet de 5€'>Economique</button>
             <button><img src='Images/Familial_PA.png' alt='Couple'>Familial</button>
             <button><img src='Images/Coeur_PA.png' alt='Coeur'>Romantique</button>
@@ -41,8 +45,9 @@
 
     <section id='Hebergements'>
         <!--Chaque section correspond à une première division pour pouvoir séparer le contenu et dessiner un cadre autours.
-        Chaque image est comprise dans une seconde division de manière à pouvoir créer un cadre et renre plus simple l'édition en séparant clairement chaque hôtel.
+        Chaque image est comprise dans une seconde division de manière à pouvoir créer un cadre et rendre plus simple l'édition en séparant clairement chaque hôtel.
         Qui plus est, ce système sera très simple à automatisé par la suite, les fiches d'hôtels pourront aisément être générés sur ce modèle.-->
+        <!--La boîte dans son intégralité devant être cliquable, serait-il envisageable de remplacer la div par un lien ?-->
         <p class='Avertissement'>Plus de 500 logements dans cette ville</p>
         <div id='Hebergements_Principals'>
             <h2>Hébergements à Marseille</h2>
@@ -53,8 +58,7 @@
                 Puis-je trouver un moyen de dessiner mon texte et mon cadre directement par dessus l'image ?
                 Solution intermediaire, je pourrais couper de façon brutal l'image la ou j'applique le texte.
                 Je penses d'abord commencer par mettre les cadres en CSS et voir ou ça m'amène.-->
-                <!--Notons aussi que je peux rendre l'image cliquable pour aggrandissement, à défaut d'avoir une fiche détaillé pour le moment.-->
-                <img src='Images/Vignette_hotel_H.png'>
+                                <img src='Images/Vignette_hotel_H.png'>
                 <h3>Hôtel générique mais sympa</h3>
                 <p>Entre 1 et 999€</p>
                 <P>*****</P>
