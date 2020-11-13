@@ -48,6 +48,10 @@ a:hover {
     color:inherit;
 }
 /* Header */
+/* Ca commence à ressembler à ce qu'on demande, quelques notes néanmoins :
+ La marge du haut n'est pas assez haute par rapport à la représentation.
+ J'aimerais mettre la police de "S'inscrire" en gras mais pour l'instant je n'y parviens pas.
+ Si j'augmente la taille de la boîte Header, je réduis la qualité du texte "Reservia" parce qu'il décide de grandir aussi... Que faire */
 
 header {
     display: flex;
@@ -56,11 +60,6 @@ header {
     padding: 0;
     height: 45px;
 }
-
-/* Ca commence à ressembler à ce qu'on demande, quelques notes néanmoins :
- La marge du haut n'est pas assez haute par rapport à la représentation.
- La police de l'inscription n'est pas la bonne, en la mettant sur bold je l'ai fais sortir de Railway.
- Si j'augmente la taille de la boîte Header, je réduis la qualité du texte "Reservia" parce qu'il décide de grandir aussi... Que faire */
 
 header ul {
     text-align: right;
@@ -73,11 +72,83 @@ header li {
 }
 
 header li:hover {
-    border-top: 2px blue solid;
-    color: blue;
+    border-top: 2px #0065FC solid;
+    color: #0065FC;
 }
 
 #Inscription {
-    color:blue;
+    color:#0065FC;
     font-family: 'Railway-Bold';
+}
+
+/* Rercherche et filtres */
+
+nav h2+p {
+    margin-top: 0px;
+    margin-bottom: 6px;
+}
+nav h2 {
+    margin-bottom: 0px;
+}
+
+#Geo_Recherche {
+    border: 1px solid #F2F2F2;
+    border-radius: 10px;
+    display:flex;
+    width: 300px;
+}
+#Geo_Recherche label {
+    background-color: #F2F2F2;
+    border-radius: 6px 0 0 6px;
+    width:20px;
+    margin:0px;
+    padding:0px;
+}
+
+#Geo_Recherche input[type='text'] {
+    width: 200px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#Geo_Recherche input[type='submit'] {
+    width: 80;
+    margin: 0px;
+    padding: 0px;
+    border: #0065FC solid 2px;
+    border-radius: 0px 9px 9px 0px; 
+    background-color: #0065FC;
+    color: white;
+}
+
+nav h3 {
+    margin: 10px 5px 10px 0;
+}
+
+nav div {
+    display: flex;
+    height: 40px;
+}
+
+nav button {
+    height: 30px;
+    margin: 7px 6px 0px 6px;
+    font-family: 'Raleway-Bold';
+    border-radius: 25px;
+    border: #F2F2F2 solid 2px;
+    background-color: white;
+}
+
+/* Hébergement */
+
+.Point_Info {
+    display:flex;
+    height: 35px;
+}
+
+.Point_Info img {
+    margin: 2px;
+    padding: 2px;
+    border: solid #F2F2F2 2px;
+    border-radius: 25px;
 }

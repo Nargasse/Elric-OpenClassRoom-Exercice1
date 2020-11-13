@@ -26,14 +26,14 @@
         <!-- On met ici les recherches et les filtres.-->
         <h2>Trouvez votre hébergement pour des vacances de rêve.</h2>
         <p>En plein centre ville ou en pleine nature.</p>
-        <form><!--Je ne suis pas certain de la meilleure approche pour cette section. J'ai mis une forme qui me parait cohérente vis à vis de l'usage,
+        <form id='Geo_Recherche'><!--Je ne suis pas certain de la meilleure approche pour cette section. J'ai mis une "form" qui me parait cohérente vis à vis de l'usage,
             mais je ne suis pas certain que ce soit la manière la plus simple de faire les choses, y compris vis à vis du back-end.'--> 
             <label for='Recherche_Ville'><img src='Images/Icone_Geolocalisation.png' alt='Icone geolocalisation'></label>
             <input type='text' id='Recherche_Ville' name='Recherche_Ville'>
-            <input type='submit' value='submit'>
+            <input type='submit' value='Rechercher'>
         </form>
         <div>
-            <p>Filtres :</p>
+            <h3>Filtres :</h3>
             <!--Les îcones ne sont pas terribles, mais je ne sais pas comment rendre une petite image sans la réduire à une poignée de pixels.
             Avec les 21 pixels max qui me semblaient être une taille adapté au design, les icônes de Font Awesome ne me paraissent pas tellement mieux que les miens...-->
             <button><img src='Images/Billet_PA.png' alt='Billet de 5€'>Economique</button>
@@ -48,7 +48,10 @@
         Chaque image est comprise dans une seconde division de manière à pouvoir créer un cadre et rendre plus simple l'édition en séparant clairement chaque hôtel.
         Qui plus est, ce système sera très simple à automatisé par la suite, les fiches d'hôtels pourront aisément être générés sur ce modèle.-->
         <!--La boîte dans son intégralité devant être cliquable, serait-il envisageable de remplacer la div par un lien ?-->
+        <div class='Point_Info'>
+        <img src='Images/I_Informatif.png' alt='Point information'>
         <p class='Avertissement'>Plus de 500 logements dans cette ville</p>
+        </div>
         <div id='Hebergements_Principals'>
             <h2>Hébergements à Marseille</h2>
             <div class='Fiche_Hebergement_Horizontal'>
