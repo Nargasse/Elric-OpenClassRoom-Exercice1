@@ -50,7 +50,7 @@ a:hover {
 
 @media all and (min-width: 1400px) {
     #margeage {
-        margin: 0px autoi;
+        margin: 0px auto;
         width: 1440px;
     }
 }
@@ -221,6 +221,7 @@ nav button {
     background-color: #F2F2F2;
     flex: 2;
     justify-content: space-around;
+    margin: 0px 5px;
 }
 
 .Fiche_Hebergement_Vertical {
