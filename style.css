@@ -48,9 +48,25 @@ a:hover {
     color:inherit;
 }
 
-#margeage {
-    margin: 0px auto;
-    width: 1440px;
+@media all and (min-width: 1400px) {
+    #margeage {
+        margin: 0px autoi;
+        width: 1440px;
+    }
+}
+
+@media all and (max-width: 1399px) and (min-width: 100px) {
+    #margeage {
+        margin: 0px auto;
+        width: 720px;
+    }
+}
+
+@media all and (max-width: 999px) {
+    #margeage {
+        margin: 0px auto;
+        width: 400px;
+    }
 }
 
 /* Header */
@@ -154,6 +170,7 @@ nav button {
     border-radius: 25px;
     border: #F2F2F2 solid 2px;
     background-color: white;
+    overflow: wrap;
 }
 
 .Point_Info {
@@ -231,7 +248,6 @@ nav button {
     display:flex;
     justify-content: space-around;
     margin: 40px 0px;
-    height: 650px;
 }
 
 .Double_Activite {
