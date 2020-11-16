@@ -31,7 +31,7 @@ p
 }
 
 body {
-    margin: 0 8px 0 8px;
+    margin: 0;
 }
 
 a {
@@ -47,6 +47,12 @@ a:visited {
 a:hover {
     color:inherit;
 }
+
+#margeage {
+    margin: 0px auto;
+    width: 1440px;
+}
+
 /* Header */
 /* Ca commence à ressembler à ce qu'on demande, quelques notes néanmoins :
  La marge du haut n'est pas assez haute par rapport à la représentation.
@@ -55,14 +61,16 @@ a:hover {
 
 header {
     display: flex;
-    justify-content: space-between;
-    margin: 0;
+    justify-content: flex-end;
+    margin: 0 20px 0 20px;
     padding: 0;
     height: 45px;
+    flex-wrap: wrap;
 }
 
-header ul {
-    text-align: right;
+header img {
+    /* L'image est déformé car la taille de la barre n'est pas exactement la bonne.*/
+    margin-right: auto;
 }
 
 header li {
@@ -79,6 +87,15 @@ header li:hover {
 #Inscription {
     color:#0065FC;
     font-family: 'Railway-Bold';
+    align-self: center;
+}
+
+@media all and (max-width: 1000px) {
+    header :nth-child(2) {
+        order: 3;
+        width: 100%;
+    }
+
 }
 
 /* Rercherche et filtres */
@@ -139,8 +156,6 @@ nav button {
     background-color: white;
 }
 
-/* Hébergement */
-
 .Point_Info {
     display:flex;
     height: 35px;
@@ -151,4 +166,96 @@ nav button {
     padding: 2px;
     border: solid #F2F2F2 2px;
     border-radius: 25px;
+}
+
+/* Hébergement */
+
+#Hebergements_Groupe {
+    display: flex;
+}
+
+#Hebergements_Principal {
+    border-radius: 25px;
+    background-color: #F2F2F2;
+    margin-right: 30px;
+    flex: 5;
+}
+
+#Hebergements_Galerie {
+    /* Effet d'ombrage à ajouter sur les galeries !*/
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+
+.Fiche_Hebergement_Horizontal {
+    width: 30%;
+    border-radius: 25px;
+    background-color: white;
+    border: white solid 5px;
+    margin: 10px auto;
+    overflow: hidden;
+    width: auto;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.2);
+}
+
+#Hebergements_Populaire {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    background-color: #F2F2F2;
+    flex: 2;
+    justify-content: space-around;
+}
+
+.Fiche_Hebergement_Vertical {
+    display: flex;
+    overflow: hidden;
+    border: white solid 5px;
+    border-radius: 25px;
+    margin: 10px auto;
+    height: 200px;
+    background-color: white;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.2);
+}
+
+@media all and (max-width: 1000px) {
+    #Hebergements_Groupe {
+        flex-direction: column;
+    }
+}
+
+/* Activités */
+
+#Activite_Galerie {
+    display:flex;
+    justify-content: space-around;
+    margin: 40px 0px;
+    height: 650px;
+}
+
+.Double_Activite {
+     display:flex;
+     flex-direction: column;
+     justify-content: space-between;
+ }
+
+.Fiche_Activite {
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0px;
+    background-color: #F2F2F2;
+}
+
+    footer li {
+    list-style-type: none;
 }
