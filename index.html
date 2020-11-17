@@ -38,21 +38,33 @@
           <input type="text" id="Recherche_Ville" name="Recherche_Ville" />
           <input type="submit" value="Rechercher" />
         </form>
-        <div>
+        <div id='Barre_Filtres'>
           <h3>Filtres :</h3>
           <!--Les îcones ne sont pas terribles, mais je ne sais pas comment rendre une petite image sans la réduire à une poignée de pixels.
             Avec les 21 pixels max qui me semblaient être une taille adapté au design, les icônes de Font Awesome ne me paraissent pas tellement mieux que les miens...-->
+          <div class="Cadre_Image_Filtre">
+            <img src="Images/Billet_PA.png" alt="Billet de 5€" />
+          </div>
           <button>
-            <img src="Images/Billet_PA.png" alt="Billet de 5€" />Economique
+          Economique
           </button>
+          <div class="Cadre_Image_Filtre">
+            <img src="Images/Familial_PA.png" alt="Couple" />
+          </div>
           <button>
-            <img src="Images/Familial_PA.png" alt="Couple" />Familial
+            Familial
           </button>
+          <div class="Cadre_Image_Filtre">
+          <img src="Images/Coeur_PA.png" alt="Coeur" />
+          </div>
           <button>
-            <img src="Images/Coeur_PA.png" alt="Coeur" />Romantique
+            Romantique
           </button>
+          <div class="Cadre_Image_Filtre">
+          <img src="Images/Chien.png" alt="Chien" />
+          </div>
           <button>
-            <img src="Images/Chien.png" alt="Chien" />Animaux autorisés
+            Animaux autorisés
           </button>
         </div>
         <div class="Point_Info">

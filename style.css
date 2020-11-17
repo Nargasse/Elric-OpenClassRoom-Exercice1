@@ -78,9 +78,7 @@ a:hover {
 header {
     display: flex;
     justify-content: flex-end;
-    margin: 0 20px 0 20px;
-    padding: 0;
-    height: 45px;
+    margin: 2px 20px 0 20px;
     flex-wrap: wrap;
 }
 
@@ -157,19 +155,33 @@ nav h3 {
     margin: 10px 5px 10px 0;
 }
 
-nav div {
-    display: flex;
-    height: 40px;
-}
-
 nav button {
-    height: 30px;
+    height: 32px;
     margin: 7px 6px 0px 6px;
     font-family: 'Raleway-Bold';
-    border-radius: 25px;
+    border-radius: 0px 25px 25px 0px;
     border: #F2F2F2 solid 2px;
     background-color: white;
-    overflow: wrap;
+    padding-left: 8px;
+}
+
+.Cadre_Image_Filtre {
+    position: relative;
+    top: 7px;
+    left: 17px;
+    width: 32px;
+    height: 32px;
+    background-color: #DEEBFF;
+    border-radius: 50px;
+}
+
+.Cadre_Image_Filtre img { 
+    margin: 5px;
+}
+
+#Barre_Filtres {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .Point_Info {
@@ -204,7 +216,6 @@ nav button {
 }
 
 .Fiche_Hebergement_Horizontal {
-    width: 30%;
     border-radius: 25px;
     background-color: white;
     border: white solid 5px;
@@ -212,6 +223,7 @@ nav button {
     overflow: hidden;
     width: auto;
     box-shadow: 5px 5px 8px rgba(0,0,0,0.2);
+    text-align: center;
 }
 
 #Hebergements_Populaire {
@@ -233,6 +245,7 @@ nav button {
     height: 200px;
     background-color: white;
     box-shadow: 5px 5px 8px rgba(0,0,0,0.2);
+    text-align: center;
 }
 
 @media all and (max-width: 1399px) {
@@ -261,6 +274,7 @@ nav button {
     overflow: hidden;
     box-shadow: 5px 5px 8px rgba(0,0,0,0.2);
     margin: 5px;
+    text-align: center;
 }
 
 /* Footer */
@@ -273,6 +287,10 @@ footer {
     background-color: #F2F2F2;
 }
 
-    footer li {
+footer ul {
+    padding: 0px;
+}
+
+footer li {
     list-style-type: none;
 }
