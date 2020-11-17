@@ -86,14 +86,10 @@ header img {
     margin-right: auto;
 }
 
-header ul {
-    padding: 0px;
-}
-
 header li {
     list-style-type: none;
     display: inline;
-    padding: 16px 40px 16px 40px;
+    padding: 16px 40px 16px 5px;
 }
 
 header li:hover {
@@ -297,4 +293,5 @@ footer ul {
 
 footer li {
     list-style-type: none;
+    font-family: "Raleway-Light"
 }
