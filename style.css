@@ -34,6 +34,12 @@ body {
     margin: 0;
 }
 
+i { 
+    margin: 0.4em;
+    color: #0065FC;
+    text-align: center;
+}
+
 a {
     text-decoration: none;
     color:inherit;
@@ -70,10 +76,6 @@ a:hover {
 }
 
 /* Header */
-/* Ca commence à ressembler à ce qu'on demande, quelques notes néanmoins :
- La marge du haut n'est pas assez haute par rapport à la représentation.
- J'aimerais mettre la police de "S'inscrire" en gras mais pour l'instant je n'y parviens pas.
- Si j'augmente la taille de la boîte Header, je réduis la qualité du texte "Reservia" parce qu'il décide de grandir aussi... Que faire */
 
 header {
     display: flex;
@@ -175,14 +177,13 @@ nav button {
     border-radius: 50px;
 }
 
-i { 
-    margin: 0.4em;
-    color: #0065FC
-}
-
 #Barre_Filtres {
     display: flex;
     flex-wrap: wrap;
+}
+
+.Point_Info {
+    display: flex;
 }
 
 .Point_Info i {
