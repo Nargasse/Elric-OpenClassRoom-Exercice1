@@ -175,8 +175,9 @@ nav button {
     border-radius: 50px;
 }
 
-.Cadre_Image_Filtre img { 
-    margin: 5px;
+i { 
+    margin: 0.4em;
+    color: #0065FC
 }
 
 #Barre_Filtres {
@@ -184,16 +185,12 @@ nav button {
     flex-wrap: wrap;
 }
 
-.Point_Info {
-    display:flex;
-    height: 35px;
-}
-
-.Point_Info img {
-    margin: 2px;
-    padding: 2px;
+.Point_Info i {
+    padding: 0.3em;
     border: solid #F2F2F2 2px;
     border-radius: 25px;
+    width: 15px;
+    height: 15px;
 }
 
 /* Hébergement */
