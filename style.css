@@ -54,19 +54,22 @@ a:hover {
     color:inherit;
 }
 
-@media all and (min-width: 1400px) {
+@media all and (min-width: 1500px) {
     #margeage {
         margin: 0px auto;
-        width: 1440px;
+        width: 1500px;
     }
 }
-
-@media all and (max-width: 1399px) and (min-width: 100px) {
+/* Ici il y a un Limbo ou tout est moche,
+il faudrait changer quelques règles pour faire un intermediaire joli,
+ce qui serait aussi indispensable pour retirer ces règles fixes.
+@media all and (max-width: 1499px) and (min-width: 1200px) {
     #margeage {
         margin: 0px auto;
-        width: 720px;
+        width: 1200px;
     }
 }
+*/
 
 @media all and (max-width: 999px) {
     #margeage {
@@ -205,23 +208,35 @@ nav button {
     background-color: #F2F2F2;
     margin-right: 30px;
     flex: 5;
+    padding: 0 1.1em;
 }
 
 #Hebergements_Galerie {
     display:flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     
 }
 
-.Fiche_Hebergement_Horizontal {
+.Fiche_Hebergement_Principal {
     border-radius: 25px;
     background-color: white;
-    border: white solid 5px;
-    margin: 10px auto;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.2); 
+    border:white solid 5px;
     overflow: hidden;
-    width: auto;
-    box-shadow: 5px 5px 8px rgba(0,0,0,0.2);
     text-align: center;
+    margin: 0.4em;
+}
+
+.Cadre_Image_Hebergement_Principal {
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
+}
+
+.Photo {
+    width: 100%;
+    height: 100%;
 }
 
 #Hebergements_Populaire {
@@ -231,22 +246,21 @@ nav button {
     background-color: #F2F2F2;
     flex: 2;
     justify-content: space-around;
-    margin: 0px 5px;
+    padding: 0 1.1em;
 }
 
-.Fiche_Hebergement_Vertical {
+.Fiche_Hebergement_Populaire {
     display: flex;
     overflow: hidden;
     border: white solid 5px;
     border-radius: 25px;
-    margin: 10px auto;
-    height: 200px;
+    margin: 10px;
     background-color: white;
     box-shadow: 5px 5px 8px rgba(0,0,0,0.2);
     text-align: center;
 }
 
-@media all and (max-width: 1399px) {
+@media all and (max-width: 1300px) {
     #Hebergements_Groupe {
         flex-direction: column-reverse;
     }
@@ -264,7 +278,7 @@ nav button {
 .Double_Activite {
      display:flex;
      flex-direction: column;
-     justify-content: space-between;
+     justify-content: justify;
  }
 
 .Fiche_Activite {
