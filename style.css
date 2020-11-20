@@ -158,25 +158,21 @@ nav h3 {
     margin: 10px 5px 10px 0;
 }
 
-nav button {
+.Bouton_Filtre {
     height: 32px;
     margin: 7px 6px 0px 6px;
-    font-family: 'Raleway-Bold';
-    border-radius: 0px 25px 25px 0px;
+    border-radius: 25px;
     border: #F2F2F2 solid 2px;
     background-color: white;
-    padding-left: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.Bouton_Filtre p {
+    margin: auto;
+    font-family: "Raleway-Bold";
+    padding: 0 1em;
 }
 
-.Cadre_Image_Filtre {
-    position: relative;
-    top: 7px;
-    left: 17px;
-    width: 32px;
-    height: 32px;
-    background-color: #DEEBFF;
-    border-radius: 50px;
-}
 
 #Barre_Filtres {
     display: flex;
