@@ -166,13 +166,25 @@ nav h3 {
     background-color: white;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 .Bouton_Filtre p {
     margin: auto;
     font-family: "Raleway-Bold";
-    padding: 0 1em;
+    padding-right: 1em;
 }
 
+.Cadre_Image_Filtre {
+    width: 2em;
+    height: 2em;
+    background-color: #DEEBFF;
+    border-radius: 25px;
+    z-index: 1;
+    padding: 2px;
+    position: relative;
+    bottom: 2px;
+    right: 2px;
+}
 
 #Barre_Filtres {
     display: flex;
