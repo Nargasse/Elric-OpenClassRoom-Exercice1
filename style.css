@@ -55,28 +55,11 @@ a:hover {
     color:inherit;
 }
 
-@media all and (min-width: 1500px) {
-    #margeage {
-        margin: 0px auto;
-        width: 1500px;
-    }
-}
-/* Ici il y a un Limbo ou tout est moche,
-il faudrait changer quelques règles pour faire un intermediaire joli,
-ce qui serait aussi indispensable pour retirer ces règles fixes.
-@media all and (max-width: 1499px) and (min-width: 1200px) {
-    #margeage {
-        margin: 0px auto;
-        width: 1200px;
-    }
-}
-*/
-
-@media all and (max-width: 999px) {
-    #margeage {
-        margin: 0px auto;
-        width: 400px;
-    }
+#margeage {
+    margin: 0 auto;
+    min-width: 400px;
+    max-width: 1800px;
+    padding: 0 2em;
 }
 
 /* Header */
@@ -110,7 +93,7 @@ header li:hover {
     align-self: center;
 }
 
-@media all and (max-width: 1000px) {
+@media all and (max-width: 750px) {
     header :nth-child(2) {
         order: 3;
         width: 100%;
@@ -207,6 +190,7 @@ nav h3 {
 
 #Hebergements_Groupe {
     display: flex;
+    flex-wrap: wrap-reverse;
 }
 
 #Hebergements_Principal {
@@ -266,11 +250,6 @@ nav h3 {
     text-align: center;
 }
 
-@media all and (max-width: 1300px) {
-    #Hebergements_Groupe {
-        flex-direction: column-reverse;
-    }
-}
 
 /* Activités */
 
