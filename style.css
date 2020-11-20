@@ -43,6 +43,7 @@ i {
 a {
     text-decoration: none;
     color:inherit;
+    font-family: "Raleway-Regular"
 }
 
 a:visited {
@@ -89,6 +90,7 @@ header {
 
 header img {
     margin-right: auto;
+    height: 45px;
 }
 
 header li {
@@ -128,30 +130,26 @@ nav h2 {
 
 #Geo_Recherche {
     border: 1px solid #F2F2F2;
-    border-radius: 10px;
+    border-radius: 15px;
     display:flex;
-    width: 300px;
+    width: 320px;
+    overflow: hidden;
+    height: 40px;
+    background-color: #F2F2F2;
 }
 #Geo_Recherche label {
-    background-color: #F2F2F2;
-    border-radius: 6px 0 0 6px;
     width: 20px;
     margin: auto;
-    display: flex;
 }
 
 #Geo_Recherche input[type='text'] {
     width: 200px;
-    margin: 0px;
-    padding: 0px;
+    border: none;
 }
 
 #Geo_Recherche input[type='submit'] {
-    width: 80;
-    margin: 0px;
-    padding: 0px;
+    width: 100px;
     border: #0065FC solid 2px;
-    border-radius: 0px 9px 9px 0px; 
     background-color: #0065FC;
     color: white;
 }
@@ -228,7 +226,7 @@ nav button {
     margin: 0.4em;
 }
 
-.Cadre_Image_Hebergement_Principal {
+.Cadre_Image_Hebergement {
     overflow: hidden;
     width: 300px;
     height: 200px;
@@ -273,6 +271,10 @@ nav button {
     justify-content: space-around;
     margin: 40px 0px;
     flex-wrap: wrap;
+}
+
+#Activite_Galerie p {
+    font-family: "Raleway-Bold"
 }
 
 .Double_Activite {
