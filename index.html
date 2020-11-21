@@ -22,46 +22,50 @@
       <nav>
         <h2>Trouvez votre hébergement pour des vacances de rêve.</h2>
         <p>En plein centre ville ou en pleine nature.</p>
+        <!-- Le formulaire de recherche est soumis avec un bouton car un input type submit ne peut pas avoir d'icone.-->
         <form id="Geo_Recherche">
           <label for="Recherche_Ville">
             <i class="fas fa-map-marker-alt"></i>
           </label>
           <input type="text" id="Recherche_Ville" name="Recherche_Ville" placeholder="Sigil, Outreterre"/>
-          <input type="submit" value="Rechercher" />
+          <button type="submit" id="Recherche_Icone"><i class="fas fa-search"></i></button>
+          <button type="submit" id="Recherche_Ecrit">Rechercher</button>
         </form>
         <div id='Barre_Filtres'>
           <h3>Filtres :</h3>
-          <a class="Bouton_Filtre" href="#">
+          <div id="Bouton_Survolable">
+          <span class="Bouton_Filtre">
             <div class="Cadre_Image_Filtre">
               <i class="fas fa-money-bill-wave"></i>
             </div>
             <p>Economique</p>
-          </a>
-          <a class="Bouton_Filtre" href="#">
+          </span>
+          <span class="Bouton_Filtre">
             <div class="Cadre_Image_Filtre">
               <i class="fas fa-child"></i>
             </div>
             <p>
               Familial
             </p>
-          </a>
+          </span>
 
-          <a class="Bouton_Filtre" href="#">
+          <span class="Bouton_Filtre">
             <div class="Cadre_Image_Filtre">
               <i class="fas fa-heart"></i>
               </div>
               <p>
                 Romantique
               </p>
-          </a>
-          <a class="Bouton_Filtre" href="#">
+            </span>
+          <span class="Bouton_Filtre">
             <div class="Cadre_Image_Filtre">
               <i class="fas fa-dog"></i>
               </div>
               <p>
                 Animaux autorisés
               </p>
-            </a>
+            </span>
+          </div>
         </div>
         <span class="Point_Info">
           <i class="fas fa-info"></i>
@@ -71,7 +75,10 @@
 
       <section id="Hebergements_Groupe">
       <div id="Hebergements_Populaire">
+        <span id="Titre_Hebergement_Populaire">
           <h2>Les plus populaires</h2>
+          <i class="fas fa-chart-line"></i>
+        </span>
           <div class="Hebergements_Galerie">
           <a href="#" class="Fiche_Hebergement">
             <div class="Cadre_Image_Hebergement">
@@ -234,7 +241,7 @@
             </a>
 
           </div>
-          <p>Afficher plus</p>
+          <p id="Hebergements_Afficher_Plus">Afficher plus</p>
         </div>
 
       </section>
