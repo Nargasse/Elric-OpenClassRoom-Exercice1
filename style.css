@@ -270,7 +270,26 @@ nav h3 {
     overflow: hidden;
 }
 
-@media all and (min-width: 1400px) {
+@media all and (min-width: 980px) and (max-width: 1499px) {
+    
+    #Hebergements_Principal .Fiche_Hebergement {
+        width: 48%;
+        height: 34vh;
+    }
+
+    #Hebergements_Populaire .Fiche_Hebergement {
+        width: 32%;
+        height: 22vh;
+        display: flex;
+    }
+
+
+    #Hebergements_Populaire {
+        background-color: #F2F2F2; 
+    }
+}
+
+@media all and (min-width: 1500px) {
 
     #Hebergements_Groupe {
         display: flex;
@@ -347,7 +366,18 @@ nav h3 {
     position: relative;
 }
 
-@media all and (min-width: 1400px) {
+@media all and (min-width: 980px) and (max-width: 1499px) {
+    .Colonne_Activite {
+        width: 48%;
+        max-height: 60vh;
+    }
+
+    .Colonne_Activite a {
+        max-height: 100%;
+    }
+}
+
+@media all and (min-width: 1500px) {
     .Colonne_Activite {
         width:24%;
         max-height: 50vh;
