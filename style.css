@@ -333,7 +333,7 @@ nav h3 {
     margin: 2vh;
     overflow: hidden;
     position: relative;
-    max-height: 50vh;
+    max-height: 35vh;
 }
 
 .Colonne_Activite {
@@ -344,9 +344,13 @@ nav h3 {
     position: relative;
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1400px) {
     .Colonne_Activite {
         width:24%;
+        max-height: 50vh;
+    }
+
+    .Colonne_Activite a {
         max-height: 50vh;
     }
 }
