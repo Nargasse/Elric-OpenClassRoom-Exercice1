@@ -6,6 +6,8 @@
     <title>Reservia</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/a3f1cbf15f.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   </head>
 
   <body>
@@ -70,16 +72,15 @@
       </nav>
 
       <section id="Hebergements_Groupe">
-        <!--A chaque hôtel correspond une fiche, définit de façon strcit dans un lien de manière à être cliquable.-->        
-        <div id="Hebergements_Populaire">
+      <div id="Hebergements_Populaire">
           <h2>Les plus populaires</h2>
-
-          <a href="#" class="Fiche_Hebergement_Populaire">
+          <div class="Hebergements_Galerie">
+          <a href="#" class="Fiche_Hebergement">
             <div class="Cadre_Image_Hebergement">
-              <img class="Photo" src="Images/Hebergements/Lit_De_Mousse.jpg" alt="Chambre très verte" />
+              <img src="Images/Hebergements/Lit_De_Mousse.jpg" alt="Chambre très verte" />
             </div>
-            <div>
-              <h3>Hôtel "Lit de mousse"</h3>
+            <div class="Cadre_Texte_Hebergement_Droite">
+              <h3>Hôtel "Paradis vert au sommet d'une superbe colline parsemée de tulipes"</h3>
               <p>A partir de 45€</p>                
               <span class="Notation">
                 <i class="fas fa-star"></i>
@@ -91,11 +92,11 @@
             </div>
           </a>
 
-          <a href="#" class="Fiche_Hebergement_Populaire">
+          <a href="#" class="Fiche_Hebergement">
             <div class="Cadre_Image_Hebergement">
-              <img class="Photo" src="Images/Hebergements/Flamant_Rose.jpg" alt="Lit double et boiseries" />
+              <img src="Images/Hebergements/Flamant_Rose.jpg" alt="Lit double et boiseries" />
             </div>
-            <div class="Cadre_Texte_Hebergement">
+            <div class="Cadre_Texte_Hebergement_Droite">
               <h3>Hôtel "Flamant rose"</h3>
               <p>A partir de 73€</p>                
               <span class="Notation">
@@ -108,11 +109,11 @@
             </div>
           </a>
 
-          <a href="#" class="Fiche_Hebergement_Populaire">
+          <a href="#" class="Fiche_Hebergement">
             <div class="Cadre_Image_Hebergement">
-              <img class="Photo" src="Images/Hebergements/Les_Sirenes.png" alt="Chambre avec décoration bleu marine" />
+              <img src="Images/Hebergements/Les_Sirenes.jpg" alt="Chambre avec décoration bleu marine" />
             </div>
-            <div class="Cadre_Texte_Hebergement">
+            <div class="Cadre_Texte_Hebergement_Droite">
               <h3>Hôtel "Les sirènes"</h3>
               <p>A partir de 27€</p>                
               <span class="Notation">
@@ -124,17 +125,18 @@
               </span>
             </div>
           </a>
+          </div>
         </div>
 
         <div id="Hebergements_Principal">
           <h2>Hébergements à Marseille</h2>
-          <div id="Hebergements_Galerie">
+          <div class="Hebergements_Galerie">
 
-            <a href="#"" class="Fiche_Hebergement_Principal">
+            <a href="#"" class="Fiche_Hebergement">
               <div class="Cadre_Image_Hebergement">
-                <img class="Photo" src="Images/Hebergements/Dormo_Faera.jpg" alt="Chambre style Buenos Aires" />
+                <img src="Images/Hebergements/Dormo_Faera.jpg" alt="Chambre style Buenos Aires" />
               </div>
-              <div class="Cadre_Texte_Hebergement">
+              <div class="Cadre_Texte_Hebergement_Bas">
                 <h3>Hôtel "Dormejo Faera"</h3>
                 <p>A partir de 112€</p>
                 <span class="Notation">
@@ -147,11 +149,11 @@
               </div>
             </a>
 
-            <a href="#" class="Fiche_Hebergement_Principal">
+            <a href="#" class="Fiche_Hebergement">
               <div class="Cadre_Image_Hebergement">
-                <img class="Photo" src="Images/Hebergements/Baldaquin.jpg" alt="Chambre style Rococo" />
+                <img src="Images/Hebergements/Baldaquin.jpg" alt="Chambre style Rococo" />
               </div>
-              <div>
+              <div class="Cadre_Texte_Hebergement_Bas">
                 <h3>Hôtel "Les baldaquins"</h3>
                 <p>A partir de 1267€</p>
                 <span class="Notation">
@@ -165,11 +167,11 @@
               </div>
             </a>
 
-            <a href="#" class="Fiche_Hebergement_Principal">
+            <a href="#" class="Fiche_Hebergement">
               <div class="Cadre_Image_Hebergement">
-                <img class="Photo" src="Images/Hebergements/Celestial_Peace.jpg" alt="Chambre simple avec télé" />
+                <img src="Images/Hebergements/Celestial_Peace.jpg" alt="Chambre simple avec télé" />
               </div>
-              <div>
+              <div class="Cadre_Texte_Hebergement_Bas">
                 <h3>Hôtel "Paix Céleste"</h3>
                 <p>A partir de 83€</p>
                 <span class="Notation">
@@ -182,11 +184,11 @@
               </div>
             </a>
 
-            <a  href="#" class="Fiche_Hebergement_Principal">
+            <a  href="#" class="Fiche_Hebergement">
               <div class="Cadre_Image_Hebergement">
-                <img class="Photo" src="Images/Hebergements/Rêve_De_Bois.jpg" alt="Dortoir en bois" />
+                <img src="Images/Hebergements/Reve_De_Bois.jpg" alt="Dortoir en bois" />
               </div>
-              <div>
+              <div class="Cadre_Texte_Hebergement_Bas">
                 <h3>Auberge "Rêve de bois"</h3>
                 <p>A partir de 45€</p>
                 <span class="Notation">
@@ -199,11 +201,11 @@
               </div>
             </a>
 
-            <a href="#" class="Fiche_Hebergement_Principal">
+            <a href="#" class="Fiche_Hebergement">
               <div class="Cadre_Image_Hebergement">
-                <img class="Photo" src="Images/Hebergements/New_Massalia.jpg" alt="Chambre style moderne" />
+                <img src="Images/Hebergements/New_Massalia.jpg" alt="Chambre style moderne" />
               </div>
-              <div>
+              <div class="Cadre_Texte_Hebergement_Bas">
                 <h3>Hôtel "Nouvelle Massalia"</h3>
                 <p>A partir de 149€</p>
                 <span class="Notation">
@@ -216,11 +218,11 @@
               </div>
             </a>
 
-            <a href="#" class="Fiche_Hebergement_Principal">
+            <a href="#" class="Fiche_Hebergement">
               <div class="Cadre_Image_Hebergement">
-                <img class="Photo" src="Images/Hebergements/Literie_Tribale.jpg" alt="Chambre avec grande fenêtres" />
+                <img src="Images/Hebergements/Literie_Tribale.jpg" alt="Chambre avec grande fenêtres" />
               </div>
-              <div class="Commentaire_Image">
+              <div class="Cadre_Texte_Hebergement_Bas">
                 <h3>Hôtel "Literie Tribale"</h3>
                 <p>A partir de 91€</p>                
                 <span class="Notation">
@@ -242,33 +244,37 @@
       <section id="Activites">
         <h2>Activités à Marseille</h2>
         <div id="Activite_Galerie">
-            <figure class="Fiche_Activite_Seule">
+          <div class="Colonne_Activite">
+            <a href="#" class="Fiche_Activite_Seule">
                 <img src="Images/Activite/Port_Stardrew.jpg" alt ="Un port de plaisance">
-                <figcaption>Port de Stardrew</figcaption>
-            </figure>
-            <div class="Colonne_Activite_Double">
-              <figure class="Fiche_Activite_Double">
+                <h3>Port de Stardrew</h3>
+            </a>
+          </div>
+            <div class="Colonne_Activite">
+              <a href="#" class="Fiche_Activite_Double">
                 <img src="Images/Activite/Temple_Elsweyr.jpg" alt ="Temple au milieu du désert">
-                <figcaption>Premier temple d'Elsweyr</figcaption>
-              </figure>
-              <figure class="Fiche_Activite_Double">
+                <h3>Premier temple d'Elsweyr</h3>
+              </a>
+              <a href="#" class="Fiche_Activite_Double">
                 <img src="Images/Activite/Vvardenfell.jpg" alt ="Vue d'une île">
-                <figcaption>Île de Vvardenfell</figcaption>
-              </figure>
+                <h3>Île de Vvardenfell</h3>
+              </a>
             </div>
-              <figure class="Fiche_Activite_Seule">
+            <div class="Colonne_Activite">
+            <a href="#" class="Fiche_Activite_Seule">
                 <img src="Images/Activite/Anor_Londo.jpg" alt ="Ville, avec eglise sur colline en fond">
-                <figcaption>Ville de Anor Londo</figcaption>
-              </figure>
-            <div class="Colonne_Activite_Double">
-              <figure class="Fiche_Activite_Double">
+                <h3>Ville de Anor Londo</h3>
+            </a>
+            </div>
+            <div class="Colonne_Activite">
+              <a href="#" class="Fiche_Activite_Double">
                 <img src="Images/Activite/Cote_Esther.jpg" alt ="Vue du haut d'une cote">
-                <figcaption>Cote de Esther</figcaption>
-              </figure>
-              <figure class="Fiche_Activite_Double">
+                <h3>Cote de Esther</h3>
+              </a>
+              <a href="#" class="Fiche_Activite_Double">
                 <img src="Images/Activite/Paradis_25.jpg" alt ="Chateau style renaissance tardive">
-                <figcaption>Vue du Paradis 25</figcaption>
-              </figure>
+                <h3>Vue du Paradis 25</h3>
+              </a>
             </div>
         </div>
       </section>
