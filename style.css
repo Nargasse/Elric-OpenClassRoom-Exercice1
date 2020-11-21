@@ -362,6 +362,7 @@ l'équilibre entre la taille de l'image et la boie de texte qui se place directe
     height: 100%;
     width: 100%;
     border-radius: 25px;
+    overflow: hidden;
 }
 
 .Fiche_Hebergement p, .Fiche_Hebergement h3 {
