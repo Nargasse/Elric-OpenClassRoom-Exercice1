@@ -78,26 +78,26 @@ header img {
     order: 1;
 }
 
-header span {
+#Navigation_Interne {
     display: flex;
     width: 100%;
     order: 4;
 }
 
-header span p {
+#Navigation_Interne p {
     width: 50%;
     padding: 16px;
     border-bottom: 2px #DEEBFF solid;
     text-align: center;
 }
 
-header span :hover {
+#Navigation_Interne :hover {
     border-bottom: 2px #0065FC solid;
 }
 /*
 
 */
-header span p :hover {
+#Navigation_Interne p :hover {
     border: none;
 }
 
@@ -115,12 +115,12 @@ header span p :hover {
         margin-top: 0;
     }
 
-    header span {
+    #Navigation_Interne {
         order: 2;
         width: auto;
     }
 
-    header span p {
+    #Navigation_Interne p {
         padding: 0 4em;
         padding-top: 2em;
         margin:0;
@@ -129,7 +129,7 @@ header span p :hover {
         border-bottom: none;
     }
     
-    header span :hover {
+    #Navigation_Interne :hover {
         border-bottom: none;
         border-top: 2px #0065FC solid;
         color: #0065FC;
@@ -200,6 +200,7 @@ nav h3 {
     justify-content: space-between;
     position: relative;
 }
+
 /* la propriété hover est hérité par les sous-éléments, ce qui contraint à l'enlever à ceux-la. */
 #Bouton_Survolable :hover {
     border: #0065FC groove 2px;
@@ -220,8 +221,8 @@ nav h3 {
 }
 
 /* Le fond bleu de l'icone dépase de la boîte et la recouvre, ce qui créer un joli effet.
-Petit défaut néanmoins, le fond recouvre aussi la border changé au survol.
-Cela pourrait être corrigé par une manipulation du Z-index, mais j'aime bien l'effet. */
+Petit défaut néanmoins, le fond recouvre aussi la border changé au survol.*/
+
 .Cadre_Image_Filtre {
     width: 2rem;
     height: 2rem;
@@ -450,7 +451,6 @@ et permettent aussi d'éviter les points ou l'étirement des images aurait été
 .Double_Activite {
      display:flex;
      flex-direction: column;
-     justify-content: justify;
  }
 
 #Activite_Galerie img {
