@@ -381,7 +381,7 @@ l'équilibre entre la taille de l'image et la boie de texte qui se place directe
 /* Après quelques tests, ces breackpoints sont dans les normes générales des périphériques visés,
 et permettent aussi d'éviter les points ou l'étirement des images aurait été le plus problèmatique. */
 
-@media all and (min-width: 800px) and (max-width: 1199px) {
+@media all and (min-width: 800px) and (max-width: 1299px) {
     
     #Hebergements_Principal .Fiche_Hebergement {
         width: 48%;
@@ -403,7 +403,7 @@ et permettent aussi d'éviter les points ou l'étirement des images aurait été
     }
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1300px) {
 
     #Hebergements_Groupe {
         display: flex;
@@ -479,7 +479,7 @@ et permettent aussi d'éviter les points ou l'étirement des images aurait été
     position: relative;
 }
 
-@media all and (min-width: 800px) and (max-width: 1199px) {
+@media all and (min-width: 800px) and (max-width: 1299px) {
     .Colonne_Activite {
         width: 48%;
         max-height: 60vh;
@@ -490,7 +490,7 @@ et permettent aussi d'éviter les points ou l'étirement des images aurait été
     }
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1300px) {
     .Colonne_Activite {
         width:24%;
         max-height: 50vh;
