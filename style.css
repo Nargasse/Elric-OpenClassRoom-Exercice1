@@ -108,7 +108,7 @@ header img {
     order: 3;
 }
 
-@media all and (min-width: 1000px) {
+@media all and (min-width: 800px) {
     header {
         margin-top: 0;
     }
@@ -256,7 +256,7 @@ Petit défaut néanmoins, le fond recouvre aussi la border changé au survol.*/
     margin: auto 0;
 }
 
-@media all and (min-width: 900px) {
+@media all and (min-width: 800px) {
     #Recherche_Ecrit {
         width: 7em;
         border: #0065FC solid 2px;
@@ -381,7 +381,7 @@ l'équilibre entre la taille de l'image et la boie de texte qui se place directe
 /* Après quelques tests, ces breackpoints sont dans les normes générales des périphériques visés,
 et permettent aussi d'éviter les points ou l'étirement des images aurait été le plus problèmatique. */
 
-@media all and (min-width: 900px) and (max-width: 1399px) {
+@media all and (min-width: 800px) and (max-width: 1199px) {
     
     #Hebergements_Principal .Fiche_Hebergement {
         width: 48%;
@@ -403,7 +403,7 @@ et permettent aussi d'éviter les points ou l'étirement des images aurait été
     }
 }
 
-@media all and (min-width: 1400px) {
+@media all and (min-width: 1200px) {
 
     #Hebergements_Groupe {
         display: flex;
@@ -479,7 +479,7 @@ et permettent aussi d'éviter les points ou l'étirement des images aurait été
     position: relative;
 }
 
-@media all and (min-width: 900px) and (max-width: 1399px) {
+@media all and (min-width: 800px) and (max-width: 1199px) {
     .Colonne_Activite {
         width: 48%;
         max-height: 60vh;
@@ -490,7 +490,7 @@ et permettent aussi d'éviter les points ou l'étirement des images aurait été
     }
 }
 
-@media all and (min-width: 1400px) {
+@media all and (min-width: 1200px) {
     .Colonne_Activite {
         width:24%;
         max-height: 50vh;
