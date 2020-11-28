@@ -302,14 +302,16 @@ Petit défaut néanmoins, le fond recouvre aussi la border changé au survol.*/
     
 }
 
-#Hebergements_Groupe img {
+#Hebergements_Principal img {
     object-fit: cover;
-    height: 100%;
+    height: 70%;
     width: 100%;
-    object-position: 30% 60%;
 }
 
 #Hebergements_Populaire img {
+    object-fit: cover;
+    height: 100%;
+    width: 55%;
     max-width: 65vh;
 }
 
@@ -342,6 +344,7 @@ l'équilibre entre la taille de l'image et la boie de texte qui se place directe
     position: absolute;
     bottom: 0px;
     width: 100%;
+    min-height:30%;
     margin: 0;
     background-color: white;
     padding: 1rem;
@@ -368,7 +371,6 @@ l'équilibre entre la taille de l'image et la boie de texte qui se place directe
 .Cadre_Image_Hebergement {
     height: 100%;
     width: 100%;
-    border-radius: 25px;
     overflow: hidden;
 }
 
