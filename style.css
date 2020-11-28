@@ -355,10 +355,9 @@ l'équilibre entre la taille de l'image et la boie de texte qui se place directe
     top: 0px;
     right: 0px;
     height: 100%;
-    max-width: 60%;
     box-sizing: border-box;
     padding: 1rem;
-    width: 60%;
+    width: 55%;
 }
 
 .Cadre_Texte_Hebergement_Droite span {
