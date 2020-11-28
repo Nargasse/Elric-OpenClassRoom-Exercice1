@@ -338,6 +338,10 @@ Petit défaut néanmoins, le fond recouvre aussi la border changé au survol.*/
     height: 24vh;
 }
 
+#Hebergements_Principal .Fiche_Hebergement {
+    min-height: 220px;
+}
+
 .Fiche_Hebergement i {
     color: #0065FC;
 }
