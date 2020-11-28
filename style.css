@@ -256,7 +256,7 @@ Petit défaut néanmoins, le fond recouvre aussi la border changé au survol.*/
     margin: auto 0;
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 900px) {
     #Recherche_Ecrit {
         width: 7em;
         border: #0065FC solid 2px;
@@ -277,12 +277,12 @@ Petit défaut néanmoins, le fond recouvre aussi la border changé au survol.*/
 /*Hebergements*/
 
 #Hebergements_Principal {
-    padding: 0 1.1em;
+    padding: 2em 1.3em;
 }
 
 #Hebergements_Populaire {
     background-color: #F2F2F2;
-    padding: 0 1.1em;
+    padding: 2em 1.3em 1em 1.3em;
 }
 
 #Titre_Hebergement_Populaire {
@@ -317,13 +317,18 @@ Petit défaut néanmoins, le fond recouvre aussi la border changé au survol.*/
     border-radius: 25px;
     background-color: white;
     box-shadow: 5px 5px 8px rgba(0,0,0,0.2); 
-    border:white solid 5px;
+    border:white solid 7px;
     overflow: hidden;
     margin: 0.4em auto;
     position: relative;
     width: 100%;
     height: 30vh;
-    min-height: 300px;
+    min-height: 250px;
+    font-size: 1.6em;
+}
+
+#Hebergements_Populaire .Fiche_Hebergement {
+    height: 24vh;
 }
 
 .Fiche_Hebergement i {
@@ -339,7 +344,7 @@ l'équilibre entre la taille de l'image et la boie de texte qui se place directe
     width: 100%;
     margin: 0;
     background-color: white;
-    padding-left: 2rem;
+    padding: 1rem;
     box-sizing: border-box;
 }
 
@@ -352,8 +357,8 @@ l'équilibre entre la taille de l'image et la boie de texte qui se place directe
     height: 100%;
     max-width: 60%;
     box-sizing: border-box;
-    padding-left: 1rem;
-    min-width: 10rem;
+    padding: 1rem;
+    width: 60%;
 }
 
 .Cadre_Texte_Hebergement_Droite span {
@@ -368,6 +373,11 @@ l'équilibre entre la taille de l'image et la boie de texte qui se place directe
     overflow: hidden;
 }
 
+.Fiche_Hebergement .Notation i {
+    margin: 0;
+}
+
+
 .Fiche_Hebergement p, .Fiche_Hebergement h3 {
     margin: 0.3em;
     max-height: 5em;
@@ -376,12 +386,13 @@ l'équilibre entre la taille de l'image et la boie de texte qui se place directe
 
 #Hebergements_Afficher_Plus {
     font-family: "Raleway-Bold";
+    font-size: 1.5rem;
 }
 
 /* Après quelques tests, ces breackpoints sont dans les normes générales des périphériques visés,
 et permettent aussi d'éviter les points ou l'étirement des images aurait été le plus problèmatique. */
 
-@media all and (min-width: 800px) and (max-width: 1299px) {
+@media all and (min-width: 900px) and (max-width: 1399px) {
     
     #Hebergements_Principal .Fiche_Hebergement {
         width: 48%;
@@ -392,6 +403,7 @@ et permettent aussi d'éviter les points ou l'étirement des images aurait été
         width: 31%;
         height: 22vh;
         display: flex;
+        font-size: 1.4em;
     }
 
     #Hebergements_Principal {
@@ -403,7 +415,7 @@ et permettent aussi d'éviter les points ou l'étirement des images aurait été
     }
 }
 
-@media all and (min-width: 1300px) {
+@media all and (min-width: 1400px) {
 
     #Hebergements_Groupe {
         display: flex;
@@ -447,7 +459,7 @@ et permettent aussi d'éviter les points ou l'étirement des images aurait été
     width: 100%;
     margin: 0;
     background-color: white;
-    padding-left: 2em;
+    padding: 1.6em;
 }
 
 .Double_Activite {
@@ -479,7 +491,7 @@ et permettent aussi d'éviter les points ou l'étirement des images aurait été
     position: relative;
 }
 
-@media all and (min-width: 800px) and (max-width: 1299px) {
+@media all and (min-width: 900px) and (max-width: 1399px) {
     .Colonne_Activite {
         width: 48%;
         max-height: 60vh;
@@ -490,7 +502,7 @@ et permettent aussi d'éviter les points ou l'étirement des images aurait été
     }
 }
 
-@media all and (min-width: 1300px) {
+@media all and (min-width: 1400px) {
     .Colonne_Activite {
         width:24%;
         max-height: 50vh;
