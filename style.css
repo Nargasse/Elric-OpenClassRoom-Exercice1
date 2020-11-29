@@ -70,14 +70,13 @@ a:hover {
 
 /* Header */
 
-header {
+#Barre_Banniere {
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
-    margin-top: 1.5em;
 }
 
-header img {
+#Barre_Banniere img {
     margin: auto auto 0 1.5em;
     height: 45px;
     order: 1;
@@ -141,11 +140,11 @@ header img {
 
 /* Rercherche et filtres */
 
-nav h2+p {
+nav h1+p {
     margin-top: 0px;
     margin-bottom: 6px;
 }
-nav h2 {
+nav h1 {
     margin-bottom: 0px;
 }
 
@@ -189,8 +188,9 @@ nav h2 {
     display: none;
 }
 
-nav h3 {
+nav h2 {
     margin: 10px 5px 10px 0;
+    font-size: 1.2rem;
 }
 
 .Bouton_Filtre {
@@ -204,7 +204,6 @@ nav h3 {
     position: relative;
 }
 
-/* la propriété hover est hérité par les sous-éléments, ce qui contraint à l'enlever à ceux-la. */
 #Bouton_Survolable :hover {
     border: #0065FC groove 2px;
 }
@@ -222,9 +221,6 @@ nav h3 {
 .Bouton_Filtre i {
     color:#0065FC;
 }
-
-/* Le fond bleu de l'icone dépase de la boîte et la recouvre, ce qui créer un joli effet.
-Petit défaut néanmoins, le fond recouvre aussi la border changé au survol.*/
 
 .Cadre_Image_Filtre {
     width: 2rem;
@@ -331,7 +327,7 @@ Petit défaut néanmoins, le fond recouvre aussi la border changé au survol.*/
     width: 100%;
     height: 30vh;
     min-height: 250px;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 #Hebergements_Populaire .Fiche_Hebergement {
@@ -356,7 +352,7 @@ l'équilibre entre la taille de l'image et la boie de texte qui se place directe
     min-height:30%;
     margin: 0;
     background-color: white;
-    padding: 1rem;
+    padding: 0.4rem;
     box-sizing: border-box;
 }
 
@@ -368,7 +364,7 @@ l'équilibre entre la taille de l'image et la boie de texte qui se place directe
     right: 0px;
     height: 100%;
     box-sizing: border-box;
-    padding: 1rem;
+    padding: 0.4rem;
     width: 55%;
 }
 
