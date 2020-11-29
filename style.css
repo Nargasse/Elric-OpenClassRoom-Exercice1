@@ -312,7 +312,7 @@ nav h2 {
 #Hebergements_Populaire img {
     object-fit: cover;
     height: 100%;
-    width: 55%;
+    width: 45%;
     max-width: 65vh;
 }
 
@@ -325,8 +325,8 @@ nav h2 {
     margin: 0.5em 0;
     position: relative;
     width: 100%;
-    height: 30vh;
-    min-height: 250px;
+    max-height: 275px;
+    min-height: 180px;
     font-size: 1.2em;
 }
 
@@ -342,9 +342,6 @@ nav h2 {
     color: #0065FC;
 }
  
-/* Le positionnement des boîtes de texte en absolute permet de faciliter
-l'équilibre entre la taille de l'image et la boie de texte qui se place directement par dessus.*/
-
 .Cadre_Texte_Hebergement_Bas {
     position: absolute;
     bottom: 0px;
