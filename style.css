@@ -328,11 +328,13 @@ nav h2 {
 }
 
 #Hebergements_Populaire .Fiche_Hebergement {
-    height: 24vh;
+    min-height: 190px;
+    height: 23vh;
 }
 
 #Hebergements_Principal .Fiche_Hebergement {
-    height: 240px;
+    min-height: 240px;
+    height: 30vh;
 }
 
 
@@ -400,12 +402,10 @@ et permettent aussi d'éviter les points ou l'étirement des images aurait été
 
     #Hebergements_Principal .Fiche_Hebergement {
         width: 46%;
-        height: 34vh;
     }
 
     #Hebergements_Populaire .Fiche_Hebergement {
         width: 29%;
-        height: 22vh;
         display: flex;
     }
 
@@ -431,11 +431,6 @@ et permettent aussi d'éviter les points ou l'étirement des images aurait été
 
     #Hebergements_Principal .Fiche_Hebergement {
         width: 29%;
-        height: 34vh;
-    }
-
-    #Hebergements_Populaire .Fiche_Hebergement {
-        height: 22vh;
     }
 
     #Hebergements_Principal {
