@@ -1,4 +1,5 @@
-# Exercice fait dans le cadre de mon parcours sur Open Class Room.
+# Transformer une maquette en site web
+Exercice fait dans le cadre de mon parcours sur Open Class Room.
 
 L'enjeu ici était de reproduire, de la manière la plus précise possible, une maquette fournie par un graphiste, avec version mobile et normale, que vous pourrez voir tout en bas de ce readme.
 La page respecte les standards W3C pour le HTML et le CSS, quelques effets, déterminé en correspondance avec les besoins indiqués pour le client, ont étés ajoutés lors du passage du curseur sur certains éléments.
